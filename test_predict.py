@@ -9,7 +9,7 @@ def client():
 def test_pinger(client):
     resp = client.get('/ping')
     assert resp.status_code == 200
-    assert resp.json == {"MESSAGE" : "Hi, I am Pinging p78888...!!!!!"}
+    assert resp.json == {"MESSAGE" : "Hi, I am Pinging ...!!!!!"}
 
 
 def test_predict(client):
